@@ -29,7 +29,7 @@ Building simple tools for everyday problems.
 <p>Calculate profit and ROI for your crypto trades.</p>
 </div>
 
-<div class="card">
+<div class="card" onclick="scrollToCalculator()">
 <h3>Pi Coin Value Tool</h3>
 <p>Estimate the future value of your Pi coins.</p>
 </div>
@@ -41,17 +41,17 @@ Building simple tools for everyday problems.
 
 </div>
 </br>    </br>
-<div class="card">
+<div class="card" id="pi-calculator">
 
 <h3>Pi Coin Calculator</h3>
 
-<input class="calc-input" type="number" id="coins" placeholder="Number of Pi coins">
+<input class="calc-input" type="number" id="coins" placeholder="Number of Pi coins" oninput="calculatePi()">
 
-<input class="calc-input" type="number" id="price" placeholder="Price per Pi ($)">
+<input class="calc-input" type="number" id="price" placeholder="Price per Pi ($)" oninput="calculatePi()">
 
-<button class="calc-btn" onclick="calculatePi()">Calculate</button>
 
 <p id="result"></p>
+
 
 </div>
 
