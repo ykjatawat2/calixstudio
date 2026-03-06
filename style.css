@@ -74,12 +74,13 @@ cursor:pointer;
 .calc-btn:hover{
 background:#2563eb;
 }
-.top-header{
+.site-logo{
 position:fixed;
 top:20px;
 right:30px;
+z-index:1000;
 }
 
-.logo{
-height:40px;
+.site-logo img{
+height:45px;
 }
