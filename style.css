@@ -31,9 +31,20 @@ h1{
 }
 
 .card{
-    background:#414957;
-    padding:25px;
-    border-radius:10px;
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#263449;
+}
+.card-link{
+text-decoration:none;
+color:inherit;
 }
 
 .card h3{
