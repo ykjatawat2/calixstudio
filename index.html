@@ -85,6 +85,19 @@ Building simple tools for everyday problems.
 </div>
 
 </div>
+    
+<div class="card">
+<h3>Pi Coin Calculator</h3>
+
+<input type="number" id="coins" placeholder="Number of Pi coins">
+
+<input type="number" id="price" placeholder="Price per Pi">
+
+<button onclick="calculatePi()">Calculate</button>
+
+<p id="result"></p>
+
+</div>
 
 <div class="footer">
 <p>© 2026 Calix Studio</p>
@@ -92,9 +105,25 @@ Building simple tools for everyday problems.
 </div>
 
 </div>
+<script>
 
+function calculatePi(){
+
+let coins = document.getElementById("coins").value;
+
+let price = document.getElementById("price").value;
+
+let total = coins * price;
+
+document.getElementById("result").innerText =
+"Estimated value: $" + total;
+
+}
+
+</script>
 </body>
 
 </html>
+
 
 
