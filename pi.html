@@ -3,9 +3,11 @@
 
 <head>
 <meta charset="UTF-8">
+
 <title>Pi Tools | Calix Studio</title>
 
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 </head>
 
@@ -27,7 +29,7 @@ Useful tools for Pi Network pioneers.
 
 <div class="tools">
 
-<div class="card">
+<div class="card2">
 
 <h3>Pi Value Calculator</h3>
 
@@ -36,15 +38,23 @@ Useful tools for Pi Network pioneers.
 <a href="#calculator">Open Tool</a>
 
 </div>
-<div class="card" id="calculator">
+<div class="card2" id="calculator">
 
 <h3>Pi Coin Calculator</h3>
 
-<input class="calc-input" type="number" id="coins" placeholder="Number of Pi coins">
+<select class="calc-input" id="currency" onchange="calculatePi()" width="5px">
+<option value="$">USD ($)</option>
+<option value="₹">INR (₹)</option>
+<option value="€">EUR (€)</option>
+<option value="£">GBP (£)</option>
+<option value="¥">JPY (¥)</option>
+</select>
 
-<input class="calc-input" type="number" id="price" placeholder="Price per Pi ($)">
 
-<button class="calc-btn" onclick="calculatePi()">Calculate</button>
+<input class="calc-input" type="number" id="coins" placeholder="Number of Pi coins" oninput="calculatePi()">
+
+
+<input class="calc-input" type="number" id="price" placeholder="Price per Pi ($)" oninput="calculatePi()">
 
 <p id="result"></p>
 
