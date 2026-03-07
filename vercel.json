@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/pi", "destination": "/pi.html" },
+    { "source": "/tools", "destination": "/tools.html" }
+  ]
+}
