@@ -5,9 +5,16 @@ let price = document.getElementById("price").value || 0;
 let currency = document.getElementById("currency").value;
 
 let total = coins * price;
-
 document.getElementById("result").innerText =
 "Estimated Value: " + currency + total.toLocaleString();
+
+}
+function updateCurrency(){
+
+let currency = document.getElementById("currency").value;
+
+document.getElementById("price").placeholder =
+"Price per Pi (" + currency + ")";
 
 }
 function scrollToCalculator(){
