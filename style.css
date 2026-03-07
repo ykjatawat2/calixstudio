@@ -55,6 +55,12 @@ padding:30px;
 border-radius:12px;
 width:420px;
 }
+.card2#pricehistory{
+background:#021635;
+padding:30px;
+border-radius:12px;
+width:700px;
+}
 
 .newcard{
 background:#1e293b;

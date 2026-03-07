@@ -81,6 +81,17 @@ On this page, you can use several useful Pi Network tools, including a Pi value 
 Whether you are curious about the future price of Pi coin, calculating the value of your mined coins, or exploring the potential of the Pi ecosystem, these tools can help you better understand 
 the opportunities within the Pi Network.
 </p>
+<div class="container" >
+<div class="card2" id="pricehistory" >
+<h3>Pi Price History</h3>
+
+<p>View recent price trends of Pi coin.</p>
+
+<canvas id="priceHistoryChart"></canvas>
+
+</div>
+
+</div>
 <div class="container">
 
 <div class="pi-features">
@@ -110,7 +121,7 @@ the opportunities within the Pi Network.
 
 <h3>Pi Coin Calculator</h3>
 
-<select class="calc-input" id="currency" onchange="calculatePi(); updateCurrency()" width="5px">
+<select class="calc-input" id="currency" onchange="updateCurrency(); updatePriceInput(); calculatePi()" width="5px">
 <option value="$">USD ($)</option>
 <option value="₹">INR (₹)</option>
 <option value="€">EUR (€)</option>
