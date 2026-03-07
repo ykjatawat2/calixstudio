@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -28,15 +29,16 @@ Useful tools for Pi Network pioneers.
 </p>
 
 <div class="tools">
+    <a href="#calculator" class="card-link">
 <div class="card">
 
 <h3>Pi Value Calculator</h3>
 
 <p>Estimate the future value of your Pi coins.</p>
 
-<a href="#calculator">Open Tool</a>
-
 </div>
+</a>
+<a href="#projection" class="card-link">
 <div class="card">
 
 <h3>Pi Value Over The Years</h3>
@@ -44,6 +46,7 @@ Useful tools for Pi Network pioneers.
 <p>Check Value of Pi Over the Years</p>
 
 </div>
+</a>
 </div>
 </div>
 <div class="pi-info">
@@ -103,7 +106,7 @@ the opportunities within the Pi Network.
 </br>
 </br>
 <div class="container2">
-<div class="newcard" id="calculator">
+<div class="card2" id="calculator">
 
 <h3>Pi Coin Calculator</h3>
 
@@ -124,7 +127,31 @@ the opportunities within the Pi Network.
 <p id="result"></p>
 
 </div>
+<div class="projection-container" id="projection">
 
+<div class="projection-inputs">
+
+<h3>Pi Value Over The Years</h3>
+
+<p>Check value of Pi over future years.</p>
+
+<input class="calc-input" type="number" id="yearCoins" placeholder="Number of Pi coins">
+
+<input class="calc-input" type="number" id="startPrice" placeholder="Starting Pi price ($)">
+
+<input class="calc-input" type="number" id="growth" placeholder="Yearly growth (%)">
+
+<button class="calc-btn" onclick="calculateProjection()">Calculate</button>
+
+</div>
+
+<div class="projection-chart">
+
+<canvas id="projectionChart"></canvas>
+
+</div>
+
+</div>
 </div>
 
 </div>
